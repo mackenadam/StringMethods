@@ -18,7 +18,7 @@ namespace StringMethods
             int characterIndex = inputString.IndexOf(inputCharacter);
             Console.WriteLine("{0} can be found at index: {1}", inputCharacter, characterIndex);
 
-            // Take first and last names as seperate inputs
+            // Take first and last names as seperate inputs, concatenate, and write to console
             Console.Write("Please enter your first name: ");
             string firstName = Console.ReadLine();
             Console.WriteLine("Your first name has been saved as " + firstName + ".");
