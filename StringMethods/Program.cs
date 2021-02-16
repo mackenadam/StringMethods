@@ -13,7 +13,7 @@ namespace StringMethods
 
             // Take a character to find within the string
             Console.Write("Type a character to find the index:");
-            string inputCharacter = Console.ReadLine();
+            char inputCharacter = Console.ReadLine()[0];
             Console.WriteLine("You input : {0}", inputCharacter);
             int characterIndex = inputString.IndexOf(inputCharacter);
             Console.WriteLine("{0} can be found at index: {1}", inputCharacter, characterIndex);
