@@ -26,7 +26,8 @@ namespace StringMethods
             Console.Write("Please enter your last name: ");
             string lastName = Console.ReadLine();
             Console.WriteLine("Your last name has been saved as " + lastName + ".");
-            Console.WriteLine("Thank you, {0}. Your full name has been saved as {0} {1}.", firstName, lastName);
+            string fullName = string.Concat(firstName, " ", lastName);
+            Console.WriteLine("Thank you, {0}. Your full name has been saved as {1}.", firstName, fullName);
         }
     }
 }
