@@ -10,8 +10,10 @@ namespace StringMethods
             string inputString = Console.ReadLine();
             Console.WriteLine("You input: {0}", inputString);
             Console.Write("Type a character to find the index:");
-            char inputChar = (char)Console.Read();
-            Console.WriteLine("You input : {0}", inputChar);
+            char inputCharacter = (char)Console.Read();
+            Console.WriteLine("You input : {0}", inputCharacter);
+            int characterIndex = inputString.IndexOf(inputCharacter);
+            Console.WriteLine("{0} can be found at index: {1}", inputCharacter, characterIndex);
         }
     }
 }
